@@ -1,5 +1,5 @@
 class Figurageometrica:
-    def _init_(self, alto, ancho):
+    def __init__(self, alto, ancho):
         self._alto = alto
         self._ancho = ancho
 
@@ -15,5 +15,11 @@ class Figurageometrica:
     def set_ancho(self, ancho):
         self._ancho = ancho
 
-    def _str_(self):
+    def __str__(self):
         return f"Alto: {self._alto}, Ancho: {self._ancho}"
+
+if __name__ == "__main__":
+    fig1 = Figurageometrica(ancho=5,alto=6)
+    print(fig1)
+
+
