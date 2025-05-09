@@ -1,10 +1,10 @@
-from figurageometrica import Figurageometrica
+
 class color:
     def __init__(self, nombre):
-        self._nombre= nombre
+        self._nombre = nombre
 
     def __str__(self):
-        return self._nombre
+        return f'Color: {self.__dict__.__str__()}'
 
     @property
     def nombre(self):
@@ -12,8 +12,8 @@ class color:
 
     @nombre.setter
     def nombre(self, nombre):
-        self._nombre= nombre
+        self._nombre = nombre
 
 if __name__ == "__main__":
-    c1= color('Rojo')
+    c1 = color('Rojo')
     print(c1)
